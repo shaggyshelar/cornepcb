@@ -280,6 +280,13 @@ pcbs:
         outline: pcb
         layer: Edge.Cuts
     footprints:
+      # b3u1000p:
+      #   type: b3u1000p
+      #   nets:
+      #     r1: RST  
+      #     r2: GND
+      #   params:
+      #     reverse: true 
       # mcu_l:
       #   type: promicro
       #   params:
@@ -431,14 +438,14 @@ pcbs:
         params:
           text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
           justify: left
-      # info_r:
-      #   type: text
-      #   anchor:
-      #     ref:
-      #       - matrix_pinky_bottom
-      #     shift: [0.75 kx, 0]
-      #   params:
-      #     layer: B.SilkS
-      #     text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
-      #     justify: right mirror
+      info_r:
+        type: text
+        anchor:
+          ref:
+            - matrix_pinky_bottom
+          shift: [0.75 kx, 0]
+        params:
+          layer: B.SilkS
+          text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
+          justify: right mirror
 
