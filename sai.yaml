@@ -280,6 +280,30 @@ pcbs:
         outline: pcb
         layer: Edge.Cuts
     footprints:
+      # bat:
+      #   type: bat
+      #   nets: 
+      #     neg: GND
+      #   # anchor:
+      #   #   ref: board_far_bottom
+      #   #   shift: [-42 , -0]
+      #   #   rotate: 0
+      # promicro:
+      #   type: promicro_pretty
+      #   # anchor:
+      #   #   ref: board_pinkie_home
+      #   #   shift: [-36, 0]
+      # pcm12:
+      #   type: pcm12
+      #   # anchor:
+      #   #   ref: board_pinkie_home
+      #   #   shift: [-15, 7.5]
+      #   #   rotate: 180
+      #   nets:
+      #     from: pos  
+      #     to: RAW
+      #   params:
+      #     reverse: true 
       # b3u1000p:
       #   type: b3u1000p
       #   nets:
