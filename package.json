@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "gen": "ergogen sai.yaml"
+    "gen": "ergogen sai.yaml && cp output/pcbs/board.kicad_pcb SAI/board.kicad_pcb"
   },
   "dependencies": {
     "ergogen": "github:soundmonster/ergogen#samoklava"
