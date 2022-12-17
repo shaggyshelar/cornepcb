@@ -1,6 +1,6 @@
 units:
-  kx: cx
-  ky: cy
+  kx: U
+  ky: U
   px: 2
   py: 2
 points:
@@ -15,14 +15,14 @@ points:
         nets:
           from: =colrow
           to: =column_net
-      # mx:
-      #   type: mx
-      #   params:
-      #     reverse: false
-      #     keycaps: true
-      #   nets:
-      #     from: =colrow
-      #     to: =column_net
+      mx:
+        type: mx
+        params:
+          reverse: false
+          keycaps: true
+        nets:
+          from: =colrow
+          to: =column_net
       diode:
         type: diode
         nets:
@@ -96,7 +96,7 @@ points:
           row_net: R4
   mirror:
     ref: matrix_pinky_home
-    distance: 223.7529778
+    distance: 240
 outlines:
   # board dimensions according to JLCPCB: 122.28 mm x 101.05 mm
   exports:
@@ -144,8 +144,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -4.05 ky]
-        size: [32, 76.5]
+          shift: [0.5 kx, -4.34 ky]
+        size: [34, 90]
         corner: px
     switches:
       main:
