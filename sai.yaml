@@ -10,19 +10,19 @@ points:
         type: mx
         params:
           hotswap: true
-          reverse: true
+          reverse: false
           keycaps: true
         nets:
           from: =colrow
           to: =column_net
-      mx:
-        type: mx
-        params:
-          reverse: true
-          keycaps: true
-        nets:
-          from: =colrow
-          to: =column_net
+      # mx:
+      #   type: mx
+      #   params:
+      #     reverse: false
+      #     keycaps: true
+      #   nets:
+      #     from: =colrow
+      #     to: =column_net
       diode:
         type: diode
         nets:
