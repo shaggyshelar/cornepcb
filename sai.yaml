@@ -36,34 +36,34 @@ points:
           stagger: 0 ky
           spread: kx
           key:
-            column_net: P20
+            column_net: C1
         ring:
           stagger: 0.7 ky
           spread: kx
           key:
-            column_net: P19
+            column_net: C2
         middle:
           stagger: 0.2 ky
           spread: kx
           key:
-            column_net: P18
+            column_net: C3
         index:
           stagger: -0.2 ky
           spread: kx
           key:
-            column_net: P15
+            column_net: C4
         inner:
           stagger: -0.1 ky
           spread: kx
           key:
-            column_net: P14
+            column_net: C5
       rows:
         bottom:
-          row_net: P6
+          row_net: R3
         home:
-          row_net: P5
+          row_net: R2
         top:
-          row_net: P4
+          row_net: R1
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -74,22 +74,25 @@ points:
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
-            column_net: P18
+            column_net: C3
         home:
           spread: kx
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
-            column_net: P15
+            column_net: C4
         far:
           spread: kx
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
-            column_net: P14
+            column_net: C5
       rows:
         thumb:
-          row_net: P7
+          row_net: R4
+  mirror:
+    ref: matrix_pinky_home
+    distance: 223.7529778
 outlines:
   # board dimensions according to JLCPCB: 122.28 mm x 101.05 mm
   exports:
