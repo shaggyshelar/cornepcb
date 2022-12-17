@@ -4,24 +4,20 @@ module.exports = {
     GND: "GND",
     RST: "RST",
     VCC: "VCC",
-    P21: "P21",
-    P20: "P20",
-    P19: "P19",
-    P18: "P18",
-    P15: "P15",
-    P14: "P14",
-    P16: "P16",
-    P10: "P10",
-    P1: "P1",
-    P0: "P0",
-    P2: "P2",
-    P3: "P3",
-    P4: "P4",
-    P5: "P5",
-    P6: "P6",
-    P7: "P7",
-    P8: "P8",
-    P9: "P9",
+    R1: "R1",
+    R2: "R2",
+    R3: "R3",
+    R4: "R4",
+    C1: "C1",
+    C2: "C2",
+    C3: "C3",
+    C4: "C4",
+    C5: "C5",
+    C6: "C6",
+    C7: "C7",
+    C8: "C8",
+    C9: "C9",
+    C10: "C10",
   },
   params: {
     class: "MCU",
@@ -281,8 +277,12 @@ module.exports = {
     (pad "5" smd rect (at -8.89 -13.97) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
     (pad "6" thru_hole oval (at -8.89 -11.43) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask))
     (pad "6" smd rect (at -8.89 -11.43) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
-    (pad "7" thru_hole oval (at -8.89 -8.89) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask))
-    (pad "7" smd rect (at -8.89 -8.89) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
+    (pad "7" thru_hole oval (at -8.89 -8.89) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask) ${
+      p.net.R1.str
+    })
+    (pad "7" smd rect (at -8.89 -8.89) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") ${
+      p.net.R1.str
+    })
     (pad "8" thru_hole rect (at -8.89 -6.35) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask))
     (pad "8" smd rect (at -8.89 -6.35) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
     (pad "9" smd rect (at -8.89 -3.81) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
