@@ -280,6 +280,13 @@ pcbs:
         outline: pcb
         layer: Edge.Cuts
     footprints:
+      pi_pico:
+        type: pi_pico
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [30, -20]
+          rotate: 0
       # bat:
       #   type: bat
       #   nets: 
@@ -359,38 +366,38 @@ pcbs:
       #     text: "B-"
       #   nets:
       #     net: GND
-      trrs_l:
-        type: trrs
-        anchor:
-          ref:
-            - matrix_inner_bottom
-          shift: [32, -15]
-          rotate: 270
-        params:
-          reverse: false
-          symmetric: false
-        # The naming of the nets on this footprint is different from the Corne schematics.
-        nets:
-          A: ""
-          B: VCC
-          C: GND
-          D: P0
-      trrs_r:
-        type: trrs
-        anchor:
-          ref:
-            - matrix_inner_bottom
-          shift: [32, -13]
-          rotate: 270
-        params:
-          reverse: false
-          symmetric: false
-        # The naming of the nets on this footprint is different from the Corne schematics.
-        nets:
-          A: ""
-          B: VCC
-          C: GND
-          D: P0
+      # trrs_l:
+      #   type: trrs
+      #   anchor:
+      #     ref:
+      #       - matrix_inner_bottom
+      #     shift: [32, -15]
+      #     rotate: 270
+      #   params:
+      #     reverse: false
+      #     symmetric: false
+      #   # The naming of the nets on this footprint is different from the Corne schematics.
+      #   nets:
+      #     A: ""
+      #     B: VCC
+      #     C: GND
+      #     D: P0
+      # trrs_r:
+      #   type: trrs
+      #   anchor:
+      #     ref:
+      #       - matrix_inner_bottom
+      #     shift: [32, -13]
+      #     rotate: 270
+      #   params:
+      #     reverse: false
+      #     symmetric: false
+      #   # The naming of the nets on this footprint is different from the Corne schematics.
+      #   nets:
+      #     A: ""
+      #     B: VCC
+      #     C: GND
+      #     D: P0
       # jumper_l:
       #   type: jumper
       #   anchor:
@@ -460,16 +467,16 @@ pcbs:
             - matrix_pinky_bottom
           shift: [0.75 kx, 0]
         params:
-          text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
+          text: "BRAILLE Keyboard v0.1\\nby sagar shelar"
           justify: left
-      info_r:
-        type: text
-        anchor:
-          ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
-        params:
-          layer: B.SilkS
-          text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
-          justify: right mirror
+      # info_r:
+      #   type: text
+      #   anchor:
+      #     ref:
+      #       - matrix_pinky_bottom
+      #     shift: [0.75 kx, 0]
+      #   params:
+      #     layer: B.SilkS
+      #     text: "BRAILLE Keyboard v0.1\\nby shaggyshelar"
+      #     justify: right mirror
 
