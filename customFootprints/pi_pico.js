@@ -176,6 +176,10 @@ module.exports = {
     (fp_text user "Copper Keepouts shown on Dwgs layer" (at 0.1 -30.2) (layer "Cmts.User")
       (effects (font (size 1 1) (thickness 0.15)))
     )
+    (fp_text user "${p.ref}" (at 0 0 180) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp e8e10518-f244-4710-b94d-fad19b8c673f)
+    )
     
 
     ${"" /* fp_line footprint references start */}
@@ -351,18 +355,6 @@ module.exports = {
     (pad "42" thru_hole rect (at 0 23.9) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask))
     (pad "43" thru_hole oval (at 2.54 23.9) (size 1.7 1.7) (drill 1.02) (layers *.Cu *.Mask))
     (pad "43" smd rect (at 2.54 23.9 90) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask"))
-
-    ${"" /* model footprint references start */}
-    (model "C:/Users/ncara/OneDrive/IoT/Tools/KiCad/RP-Pico Libraries/Pico.wrl"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "/Users/sagarshelar/KiCadAssets/Libraries/RP-Pico Libraries/Pico.wrl"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
 
     ${"" /* end of module below */}
     ) 
