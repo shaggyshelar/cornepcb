@@ -105,6 +105,11 @@ outlines:
         side: left
         size: [kx + px, ky + py]
         corner: px
+    raw_right:
+      - type: keys
+        side: right
+        size: [kx + px, ky + py]
+        corner: px
     thumbfan_glue:
       - type: polygon
         points:
@@ -153,10 +158,23 @@ outlines:
         side: left
         size: 14
         bound: false
+    switches_right:
+      main:
+        type: keys
+        side: right
+        size: 14
+        bound: false
     keycaps:
       main:
         type: keys
         side: left
+        size: [kx, ky]
+        bound: false
+        corner: 1
+    keycaps_right:
+      main:
+        type: keys
+        side: right
         size: [kx, ky]
         bound: false
         corner: 1
@@ -176,10 +194,34 @@ outlines:
         type: outline
         name: thumbfan_glue
         operation: add
+    keywell_right:
+      main:
+        type: outline
+        name: raw_right
+      patch_inner:
+        type: outline
+        name: patch_inner
+        operation: add
+      patch_outer:
+        type: outline
+        name: patch_outer
+        operation: add
+      thumbfan_glue:
+        type: outline
+        name: thumbfan_glue
+        operation: add
     base_outline:
       main:
         type: outline
         name: keywell
+      controller:
+        type: outline
+        name: controller_area
+        operation: add
+    base_outline_right:
+      main:
+        type: outline
+        name: keywell_right
       controller:
         type: outline
         name: controller_area
@@ -236,6 +278,10 @@ outlines:
         # TODO use footprints with pad + via reinforcement as mounting holes
         name: screw_holes
         operation: subtract
+    bottom_outline_right:
+      main:
+        type: outline
+        name: base_outline_right
     plate:
       main:
         type: outline
@@ -249,6 +295,10 @@ outlines:
         # TODO use footprints with pad + via reinforcement as mounting holes
         name: screw_holes
         operation: subtract
+    plate_right:
+      main:
+        type: outline
+        name: keywell_right
     pcb:
       main:
         type: outline
@@ -258,6 +308,10 @@ outlines:
         # TODO use plated through hole footprints as mounting holes
         name: mounting_holes
         operation: subtract
+    pcb_right:
+      main:
+        type: outline
+        name: base_outline_right
 pcbs:
   top_plate:
     include_keys: false
