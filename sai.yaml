@@ -76,7 +76,7 @@ points:
         near:
           spread: kx
           rotate: -15
-          origin: [-0.5 kx, -0.5 ky]
+          origin: [-1 kx, -0.5 ky]
           key:
             column_net: C3
         home:
@@ -110,6 +110,14 @@ outlines:
         side: right
         size: [kx + px, ky + py]
         corner: px
+    raw_all:
+      left:
+        type: outline
+        name: raw
+      right:
+        type: outline
+        name: raw_right
+        operation: add
     thumbfan_glue:
       - type: polygon
         points:
@@ -164,6 +172,14 @@ outlines:
         side: right
         size: 14
         bound: false
+    switches_all:
+      left:
+        type: outline
+        name: switches
+      right:
+        type: outline
+        name: switches_right
+        operation: add
     keycaps:
       main:
         type: keys
@@ -178,6 +194,14 @@ outlines:
         size: [kx, ky]
         bound: false
         corner: 1
+    keycaps_all:
+      left:
+        type: outline
+        name: keycaps
+      right:
+        type: outline
+        name: keycaps_right
+        operation: add
     keywell:
       main:
         type: outline
@@ -210,6 +234,14 @@ outlines:
         type: outline
         name: thumbfan_glue
         operation: add
+    keywell_all:
+      left:
+        type: outline
+        name: keywell
+      right:
+        type: outline
+        name: keywell_right
+        operation: add
     base_outline:
       main:
         type: outline
@@ -225,6 +257,14 @@ outlines:
       controller:
         type: outline
         name: controller_area
+        operation: add
+    baseline_all:
+      left:
+        type: outline
+        name: base_outline
+      right:
+        type: outline
+        name: base_outline_right
         operation: add
     screw_holes:
       top_left:
@@ -299,6 +339,14 @@ outlines:
       main:
         type: outline
         name: keywell_right
+    plate_all:
+      left:
+        type: outline
+        name: plate
+      right:
+        type: outline
+        name: plate_right
+        operation: add
     pcb:
       main:
         type: outline
@@ -312,6 +360,14 @@ outlines:
       main:
         type: outline
         name: base_outline_right
+    pcb_all:
+      left:
+        type: outline
+        name: pcb
+      right:
+        type: outline
+        name: pcb_right
+        operation: add
 pcbs:
   top_plate:
     include_keys: false
