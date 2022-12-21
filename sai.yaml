@@ -97,9 +97,9 @@ points:
           row_net: R4
           # bind: [27,0,0,60]
   # rotate: -1
-  # mirror:
-  #   ref: matrix_inner_home
-  #   distance: 90
+  mirror:
+    ref: matrix_inner_home
+    distance: 90
 outlines:
   # glue:
   #   default:
@@ -137,7 +137,7 @@ outlines:
         glue: false
     raw:
       - type: keys
-        side: left
+        side: both
         size: [kx + px, ky + py]
         corner: px
     thumbfan_glue:
@@ -187,13 +187,13 @@ outlines:
     switches:
       main:
         type: keys
-        side: left
+        side: both
         size: 14
         bound: false
     keycaps:
       main:
         type: keys
-        side: left
+        side: both
         size: [kx, ky]
         bound: false
         corner: 1
