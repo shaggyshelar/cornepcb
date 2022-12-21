@@ -96,27 +96,27 @@ points:
         thumb:
           row_net: R4
           # bind: [27,0,0,60]
-  rotate: -1
-  mirror:
-    ref: matrix_inner_home
-    distance: 90
+  # rotate: -1
+  # mirror:
+  #   ref: matrix_inner_home
+  #   distance: 90
 outlines:
-  glue:
-    default:
-      top:
-        left:
-          ref: matrix_inner_top
-          shift: [,sy / 2]
-        right:
-          ref: mirror_matrix_inner_top
-          shift: [,sy / 2]
-      bottom:
-        left:
-          ref: matrix_inner_bottom
-          shift: [,sy / -2]
-        right:
-          ref: mirror_matrix_inner_bottom
-          shift: [,sy / -2]
+  # glue:
+  #   default:
+  #     top:
+  #       left:
+  #         ref: matrix_inner_top
+  #         shift: [,sy / 2]
+  #       right:
+  #         ref: mirror_matrix_inner_top
+  #         shift: [,sy / 2]
+  #     bottom:
+  #       left:
+  #         ref: matrix_inner_bottom
+  #         shift: [,sy / -2]
+  #       right:
+  #         ref: mirror_matrix_inner_bottom
+  #         shift: [,sy / -2]
   exports:
     outline:
       main:
@@ -181,6 +181,8 @@ outlines:
             - matrix_inner_top
           shift: [0.5 kx, -4.34 ky]
         size: [34, 90]
+        #   shift: [0 kx, -4.05 ky]
+        # size: [32, 76.5]
         corner: px
     switches:
       main:
