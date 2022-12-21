@@ -211,7 +211,7 @@ outlines:
       main:
         type: keys
         side: both
-        size: [kx, ky]
+        size: [kx - 1, ky - 1]
         bound: false
         corner: 1
     # keywell:
@@ -362,6 +362,9 @@ pcbs:
       edge:
         outline: pcb
         layer: Edge.Cuts
+      keycaps:
+        outline: keycaps
+        layer: Eco1.User
     footprints:
       pi_pico:
         type: pi_pico
