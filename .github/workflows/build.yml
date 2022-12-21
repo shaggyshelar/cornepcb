@@ -14,6 +14,8 @@ jobs:
           node-version: 17.x
       - name: Install dependencies
         run: npm install
+      - name: Initialize custom footprints
+        run: npm run init
       - name: Generate unrouted PCBs
         run: npm run gen
       - name: Export DSN for main PCB
