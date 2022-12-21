@@ -1,5 +1,11 @@
 const fs = require("fs");
 const readline = require("readline");
+const logger = fs.createWriteStream("./customFootprints/index.js", {
+  flags: "a", // 'a' means appending (old data will be preserved)
+});
+
+const content =
+  "\tbat: require('./bat'),\n\tb3u1000p: require('./b3u1000p'),\n\tpcm12: require('./pcm12'),\n\tpromicro_pretty: require('./promicro_pretty'),\n\tpi_pico: require('./pi_pico')\n }";
 
 async function processLineByLine() {
   const fileStream = fs.createReadStream(
@@ -16,9 +22,10 @@ async function processLineByLine() {
   for await (const line of rl) {
     // Each line in input.txt will be successively available here as `line`.
     if (line === "}") {
-      console.log("Append Here");
+      logger.write(`\n${content}`);
+    } else {
+      logger.write(`\n${line}`);
     }
-    console.log(`${line}`);
   }
 }
 

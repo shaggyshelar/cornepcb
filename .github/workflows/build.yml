@@ -16,6 +16,8 @@ jobs:
         run: npm install
       - name: Initialize custom footprints
         run: npm run init
+      - name: Copy Files
+        run: npm run copyConfigs
       - name: Generate unrouted PCBs
         run: npm run gen
       - name: Export DSN for main PCB
