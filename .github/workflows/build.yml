@@ -14,11 +14,13 @@ jobs:
           node-version: 17.x
       - name: Install dependencies
         run: npm install
-      - name: Initialize custom footprints
+      - name: Initialize
         run: npm run init
+      - name: Display 1
+        run: npm run display1
       - name: Copy Files
         run: npm run copyConfigs
-      - name: Display Content
+      - name: Display 2
         run: npm run display
       - name: Generate unrouted PCBs
         run: npm run gen
