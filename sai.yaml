@@ -61,7 +61,7 @@ points:
           stagger: -0.1 ky
           spread: kx
           key:
-            bind: [0,40,20,0]
+            # bind: [0,40,20,0]
             column_net: C5
       rows:
         bottom:
@@ -119,23 +119,13 @@ outlines:
   #         ref: mirror_matrix_inner_bottom
   #         shift: [,sy / -2]
   exports:
-    main_outline:
-      main:
-        type: keys
-        side: both
-        size: 20
-      min:
-        type: keys
-        side: both
-        bound: false
-        size: 14
-        operation: subtract
     optout:
       main:
         type: keys
         side: both
         size: 20
         glue: false
+        corner: px
     raw:
       - type: keys
         side: both
@@ -185,6 +175,15 @@ outlines:
         #   shift: [0 kx, -4.05 ky]
         # size: [32, 76.5]
         corner: px
+    pico_area:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [0.4 kx, -3.2 ky]
+        size: [74, 71]
+        corner: px
     switches:
       main:
         type: keys
@@ -213,6 +212,21 @@ outlines:
       thumbfan_glue:
         type: outline
         name: thumbfan_glue
+        operation: add
+    main_outline:
+      main:
+        type: keys
+        side: both
+        size: 20
+      min:
+        type: keys
+        side: both
+        bound: false
+        size: 14
+        operation: subtract
+      controller:
+        type: outline
+        name: pico_area
         operation: add
     base_outline:
       main:
