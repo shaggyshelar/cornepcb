@@ -42,27 +42,32 @@ points:
           key:
             bind: [0,9,0,0]
             column_net: C1
+            mirror.column_net: C10
         ring:
           stagger: 0.7 ky
           spread: kx
           key:
             column_net: C2
+            mirror.column_net: C9
         middle:
           stagger: 0.2 ky
           spread: kx
           key:
             column_net: C3
+            mirror.column_net: C8
         index:
           stagger: -0.2 ky
           spread: kx
           key:
             column_net: C4
+            mirror.column_net: C7
         inner:
           stagger: -0.1 ky
           spread: kx
           key:
             # bind: [0,40,20,0]
             column_net: C5
+            mirror.column_net: C6
       rows:
         bottom:
           row_net: R3
@@ -81,18 +86,21 @@ points:
           origin: [-1 kx, -0.5 ky]
           key:
             column_net: C3
+            mirror.column_net: C8
         home:
           spread: kx
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C4
+            mirror.column_net: C7
         far:
           spread: kx
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C5
+            mirror.column_net: C6
       rows:
         thumb:
           row_net: R4
