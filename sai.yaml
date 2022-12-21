@@ -40,7 +40,7 @@ points:
           stagger: 0 ky
           spread: kx
           key:
-            # bind: [0,9,0,0]
+            bind: [0,9,0,0]
             column_net: C1
         ring:
           stagger: 0.7 ky
@@ -61,6 +61,7 @@ points:
           stagger: -0.1 ky
           spread: kx
           key:
+            bind: [0,40,20,0]
             column_net: C5
       rows:
         bottom:
@@ -95,7 +96,7 @@ points:
       rows:
         thumb:
           row_net: R4
-          # bind: [27,0,0,60]
+          bind: [5,0,0,50]
   # rotate: -1
   mirror:
     ref: matrix_inner_home
@@ -118,7 +119,7 @@ outlines:
   #         ref: mirror_matrix_inner_bottom
   #         shift: [,sy / -2]
   exports:
-    outline:
+    main_outline:
       main:
         type: keys
         side: both
@@ -290,6 +291,16 @@ outlines:
       main:
         type: outline
         name: base_outline
+      mounting_holes:
+        type: outline
+        # TODO use plated through hole footprints as mounting holes
+        name: mounting_holes
+        operation: subtract
+    pcb_final:
+      main:
+        type: outline
+        name: main_outline
+        # fillet: 2
       mounting_holes:
         type: outline
         # TODO use plated through hole footprints as mounting holes
