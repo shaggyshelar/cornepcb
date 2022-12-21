@@ -267,10 +267,22 @@ outlines:
           - ref: matrix_ring_home
             shift: [-0.5 kx, 0 ky]
         radius: 1.05
+      mirror_top_left:
+        type: circle
+        anchor:
+          - ref: mirror_matrix_ring_home
+            shift: [-0.5 kx, 0 ky]
+        radius: 1.05
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_pinky_bottom
+            shift: [0.5 kx, 0]
+        radius: 1.05
+      mirror_bottom_left:
+        type: circle
+        anchor:
+          - ref: mirror_matrix_pinky_bottom
             shift: [0.5 kx, 0]
         radius: 1.05
       top_right:
@@ -279,16 +291,34 @@ outlines:
           - ref: matrix_inner_top
             shift: [-0.5 kx, 0]
         radius: 1.05
+      mirror_top_right:
+        type: circle
+        anchor:
+          - ref: mirror_matrix_inner_top
+            shift: [-0.5 kx, 0]
+        radius: 1.05
       palm:
         type: circle
         anchor:
           - ref: matrix_index_bottom
             shift: [0, -1.06 ky]
         radius: 1.05
+      mirror_palm:
+        type: circle
+        anchor:
+          - ref: mirror_matrix_index_bottom
+            shift: [0, -1.06 ky]
+        radius: 1.05
       thumb:
         type: circle
         anchor:
           - ref: thumbfan_far_thumb
+            shift: [-0.55 kx, 0]
+        radius: 1.05
+      mirror_thumb:
+        type: circle
+        anchor:
+          - ref: mirror_thumbfan_far_thumb
             shift: [-0.55 kx, 0]
         radius: 1.05
     mounting_holes:
