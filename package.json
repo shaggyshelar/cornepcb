@@ -1,7 +1,8 @@
 {
   "scripts": {
     "gen": "ergogen sai.yaml && cp ./output/pcbs/board.kicad_pcb ./SAI/board.kicad_pcb",
-    "init": "cp -R ./customFootprints/ ./node_modules/ergogen/src/footprints/"
+    "copyConfigs": "cp -R ./customFootprints/ ./node_modules/ergogen/src/footprints/",
+    "init": "node ./updateIndex.js"
   },
   "dependencies": {
     "ergogen": "github:soundmonster/ergogen#samoklava"
