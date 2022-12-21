@@ -325,13 +325,23 @@ outlines:
       $extends: outlines.exports.screw_holes
       top_left:
         radius: 2.05
+      mirror_top_left:
+        radius: 2.05
       bottom_left:
+        radius: 2.05
+      mirror_bottom_left:
         radius: 2.05
       top_right:
         radius: 2.05
+      mirror_top_right:
+        radius: 2.05
       palm:
         radius: 2.05
+      mirror_palm:
+        radius: 2.05
       thumb:
+        radius: 2.05
+      mirror_thumb:
         radius: 2.05
     bottom_outline:
       main:
