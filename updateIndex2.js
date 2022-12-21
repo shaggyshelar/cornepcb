@@ -3,7 +3,7 @@ const readline = require("readline");
 const logger = fs.createWriteStream(
   "./node_modules/ergogen/src/footprints/index.js",
   {
-    flags: "a", // 'a' means appending (old data will be preserved)
+    flags: "w", // 'a' means appending (old data will be preserved)
   }
 );
 
