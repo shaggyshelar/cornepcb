@@ -119,62 +119,62 @@ outlines:
   #         ref: mirror_matrix_inner_bottom
   #         shift: [,sy / -2]
   exports:
-    optout:
-      main:
-        type: keys
-        side: both
-        size: 20
-        glue: false
-        corner: px
+    # optout:
+    #   main:
+    #     type: keys
+    #     side: both
+    #     size: 20
+    #     glue: false
+    #     corner: px
     raw:
       - type: keys
         side: both
         size: [kx + px, ky + py]
         corner: px
-    thumbfan_glue:
-      - type: polygon
-        points:
-          - ref: matrix_inner_bottom
-            shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
-          - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, 0.5 ky + 0.5 py]
-          - ref: thumbfan_far_thumb
-            shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
-          - ref: thumbfan_near_thumb
-            shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
-          - ref: matrix_pinky_bottom
-            shift: [0.5 kx - 0.5 py, -0.5 ky - 0.5 py]
-          - ref: matrix_pinky_home
-          - ref: matrix_inner_home
-    patch_outer:
-      - type: polygon
-        points:
-          - ref: matrix_ring_top
-          - ref: matrix_ring_bottom
-          - ref: matrix_pinky_bottom
-            shift: [-0.5 (kx + px), 0]
-          - ref: matrix_pinky_top
-            shift: [-0.5 (kx + px), 0]
-    patch_inner:
-      - type: polygon
-        points:
-          - ref: matrix_inner_top
-            shift: [0.5 (kx + px), 0]
-          - ref: matrix_inner_bottom
-            shift: [0.5 (kx + px), 0]
-          - ref: matrix_index_bottom
-          - ref: matrix_index_top
-    controller_area:
-      main:
-        type: rectangle
-        anchor:
-          ref:
-            - matrix_inner_top
-          shift: [0.5 kx, -4.34 ky]
-        size: [34, 90]
-        #   shift: [0 kx, -4.05 ky]
-        # size: [32, 76.5]
-        corner: px
+    # thumbfan_glue:
+    #   - type: polygon
+    #     points:
+    #       - ref: matrix_inner_bottom
+    #         shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
+    #       - ref: thumbfan_far_thumb
+    #         shift: [0.5 kx - 0.5px, 0.5 ky + 0.5 py]
+    #       - ref: thumbfan_far_thumb
+    #         shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
+    #       - ref: thumbfan_near_thumb
+    #         shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
+    #       - ref: matrix_pinky_bottom
+    #         shift: [0.5 kx - 0.5 py, -0.5 ky - 0.5 py]
+    #       - ref: matrix_pinky_home
+    #       - ref: matrix_inner_home
+    # patch_outer:
+    #   - type: polygon
+    #     points:
+    #       - ref: matrix_ring_top
+    #       - ref: matrix_ring_bottom
+    #       - ref: matrix_pinky_bottom
+    #         shift: [-0.5 (kx + px), 0]
+    #       - ref: matrix_pinky_top
+    #         shift: [-0.5 (kx + px), 0]
+    # patch_inner:
+    #   - type: polygon
+    #     points:
+    #       - ref: matrix_inner_top
+    #         shift: [0.5 (kx + px), 0]
+    #       - ref: matrix_inner_bottom
+    #         shift: [0.5 (kx + px), 0]
+    #       - ref: matrix_index_bottom
+    #       - ref: matrix_index_top
+    # controller_area:
+    #   main:
+    #     type: rectangle
+    #     anchor:
+    #       ref:
+    #         - matrix_inner_top
+    #       shift: [0.5 kx, -4.34 ky]
+    #     size: [34, 90]
+    #     #   shift: [0 kx, -4.05 ky]
+    #     # size: [32, 76.5]
+    #     corner: px
     pico_area:
       main:
         type: rectangle
@@ -206,22 +206,22 @@ outlines:
         size: [kx, ky]
         bound: false
         corner: 1
-    keywell:
-      main:
-        type: outline
-        name: raw
-      patch_inner:
-        type: outline
-        name: patch_inner
-        operation: add
-      patch_outer:
-        type: outline
-        name: patch_outer
-        operation: add
-      thumbfan_glue:
-        type: outline
-        name: thumbfan_glue
-        operation: add
+    # keywell:
+    #   main:
+    #     type: outline
+    #     name: raw
+      # patch_inner:
+      #   type: outline
+      #   name: patch_inner
+      #   operation: add
+      # patch_outer:
+      #   type: outline
+      #   name: patch_outer
+      #   operation: add
+      # thumbfan_glue:
+      #   type: outline
+      #   name: thumbfan_glue
+      #   operation: add
     main_outline:
       # main:
       #   type: keys
@@ -235,7 +235,7 @@ outlines:
       #   operation: subtract
       main:
         type: outline
-        name: keywell
+        name: raw
       controller:
         type: outline
         name: pico_area
@@ -244,14 +244,14 @@ outlines:
         type: outline
         name: bottom_area
         operation: add
-    base_outline:
-      main:
-        type: outline
-        name: keywell
-      controller:
-        type: outline
-        name: controller_area
-        operation: add
+    # base_outline:
+    #   main:
+    #     type: outline
+    #     name: keywell
+    #   controller:
+    #     type: outline
+    #     name: controller_area
+    #     operation: add
     screw_holes:
       top_left:
         type: circle
@@ -298,7 +298,7 @@ outlines:
     bottom_outline:
       main:
         type: outline
-        name: base_outline
+        name: main_outline
       screw_holes:
         type: outline
         # TODO use footprints with pad + via reinforcement as mounting holes
@@ -307,7 +307,7 @@ outlines:
     plate:
       main:
         type: outline
-        name: keywell
+        name: raw
       switches:
         type: outline
         name: switches
@@ -320,17 +320,7 @@ outlines:
     pcb:
       main:
         type: outline
-        name: base_outline
-      mounting_holes:
-        type: outline
-        # TODO use plated through hole footprints as mounting holes
-        name: mounting_holes
-        operation: subtract
-    pcb_final:
-      main:
-        type: outline
         name: main_outline
-        # fillet: 2
       mounting_holes:
         type: outline
         # TODO use plated through hole footprints as mounting holes
