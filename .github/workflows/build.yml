@@ -16,6 +16,8 @@ jobs:
         run: npm install
       - name: Initialize
         run: npm run init
+      - name: Initialize 3
+        run: npm run init3
       - name: Display 1
         run: npm run display1
       - name: Copy Files
@@ -26,6 +28,8 @@ jobs:
         run: npm run init2
       - name: Display 3
         run: npm run display
+      - name: Display 4
+        run: npm run display3
       - name: Generate unrouted PCBs
         run: npm run gen
       - name: Export DSN for main PCB

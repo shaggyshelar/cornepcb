@@ -4,8 +4,9 @@ const logger = fs.createWriteStream("./customFootprints/index.js", {
   flags: "a", // 'a' means appending (old data will be preserved)
 });
 
-const content =
-  "\tb3u1000p: require('./b3u1000p'),\n\tpcm12: require('./pcm12'),\n\tpromicro_pretty: require('./promicro_pretty'),\n\tpi_pico: require('./pi_pico')\n }";
+// const content =
+//   "\tb3u1000p: require('./b3u1000p'),\n\tpcm12: require('./pcm12'),\n\tpromicro_pretty: require('./promicro_pretty'),\n\tpi_pico: require('./pi_pico')\n }";
+const content = "\tpi_pico: require('./pi_pico')\n }";
 
 async function processLineByLine() {
   const fileStream = fs.createReadStream(

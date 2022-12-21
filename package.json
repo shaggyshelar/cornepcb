@@ -4,8 +4,10 @@
     "copyConfigs": "cp -R ./customFootprints/ ./node_modules/ergogen/src/footprints/",
     "init": "node ./updateIndex.js",
     "init2": "node ./updateIndex2.js",
+    "init3": "node ./updateIndex3.js",
     "display": "node ./displayContent.js \"./node_modules/ergogen/src/footprints/index.js\"",
-    "display1": "node ./displayContent.js \"./customFootprints/index.js\""
+    "display1": "node ./displayContent.js \"./customFootprints/index.js\"",
+    "display3": "node ./displayContent.js \"./node_modules/ergogen/src/footprints/pi_pico.js\""
   },
   "dependencies": {
     "ergogen": "github:soundmonster/ergogen#samoklava"
