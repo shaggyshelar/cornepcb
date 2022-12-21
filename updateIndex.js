@@ -26,6 +26,8 @@ async function processLineByLine() {
     } else {
       logger.write(`\n${line}`);
     }
+    console.log(`${line}`);
+    // logger.write(`\n${line}`);
   }
 }
 
