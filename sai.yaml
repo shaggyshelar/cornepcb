@@ -94,12 +94,45 @@ points:
       rows:
         thumb:
           row_net: R4
+  rotate: -1
   mirror:
-    ref: matrix_pinky_home
-    distance: 240
+    ref: matrix_inner_home
+    distance: 90
 outlines:
-  # board dimensions according to JLCPCB: 122.28 mm x 101.05 mm
+  glue:
+    default:
+      top:
+        left:
+          ref: matrix_inner_top
+          shift: [,sy / 2]
+        right:
+          ref: mirror_matrix_inner_top
+          shift: [,sy / 2]
+      bottom:
+        left:
+          ref: matrix_inner_bottom
+          shift: [,sy / -2]
+        right:
+          ref: mirror_matrix_inner_bottom
+          shift: [,sy / -2]
   exports:
+    outline:
+      main:
+        type: keys
+        side: both
+        size: 20
+      min:
+        type: keys
+        side: both
+        bound: false
+        size: 14
+        operation: subtract
+    optout:
+      main:
+        type: keys
+        side: both
+        size: 20
+        glue: false
     raw:
       - type: keys
         side: left
