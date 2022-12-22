@@ -593,4 +593,9 @@
     )
   )
 
+  (gr_line (start 81.28 81.28) (end 81.28 15.24) (layer "Edge.Cuts") (width 0.1) (tstamp 4b910721-5985-4f2a-aef9-35bed0f66cbc))
+  (gr_line (start 81.28 15.24) (end 132.08 15.24) (layer "Edge.Cuts") (width 0.1) (tstamp 811eb00c-9b09-4d75-abc6-a463fc3fcc81))
+  (gr_line (start 132.08 81.28) (end 81.28 81.28) (layer "Edge.Cuts") (width 0.1) (tstamp add704f2-cd66-4040-87c1-b6ad4e395274))
+  (gr_line (start 132.08 15.24) (end 132.08 81.28) (layer "Edge.Cuts") (width 0.1) (tstamp c1d57acb-ed96-4dae-adb3-05960d8cf489))
+
 )
