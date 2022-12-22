@@ -15,14 +15,14 @@ points:
         nets:
           from: =colrow
           to: =column_net
-      mx:
-        type: mx
-        params:
-          reverse: false
-          keycaps: true
-        nets:
-          from: =colrow
-          to: =column_net
+      # mx:
+      #   type: mx
+      #   params:
+      #     reverse: false
+      #     keycaps: true
+      #   nets:
+      #     from: =colrow
+      #     to: =column_net
       diode:
         type: diode
         nets:
@@ -265,7 +265,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_ring_home
-            shift: [-0.5 kx, 0 ky]
+            shift: [-0.5 kx, -1]
         radius: 1.05
       mirror_top_left:
         type: circle
@@ -277,19 +277,19 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_pinky_bottom
-            shift: [0.5 kx, 0]
+            shift: [0.7 kx, 0]
         radius: 1.05
       mirror_bottom_left:
         type: circle
         anchor:
           - ref: mirror_matrix_pinky_bottom
-            shift: [0.5 kx, 0]
+            shift: [0.7 kx, 0]
         radius: 1.05
       top_right:
         type: circle
         anchor:
           - ref: matrix_inner_top
-            shift: [-0.5 kx, 0]
+            shift: [-0.5 kx, -1]
         radius: 1.05
       mirror_top_right:
         type: circle
