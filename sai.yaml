@@ -40,7 +40,7 @@ points:
           stagger: 0 ky
           spread: kx
           key:
-            bind: [0,9,2.6,0]
+            bind: [0,9,0,0]
             column_net: C1
             mirror.column_net: C10
         ring:
@@ -104,7 +104,7 @@ points:
       rows:
         thumb:
           row_net: R4
-          bind: [20,0,0,66]
+          bind: [20,0,0,50]
   # rotate: -1
   mirror:
     ref: matrix_inner_home
@@ -594,10 +594,10 @@ pcbs:
         type: text
         anchor:
           ref:
-            - matrix_pinky_bottom
-          shift: [0.75 kx, 0]
+            - matrix_index_bottom
+          shift: [55, -18]
         params:
-          text: "BRAILLE Keyboard v0.1\\nby sagar shelar"
+          text: "BRAILLE Keyboard v0.1"
           justify: left
       # info_r:
       #   type: text
