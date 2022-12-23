@@ -82,21 +82,21 @@ points:
       columns:
         near:
           spread: kx
-          rotate: -15
+          rotate: -5
           origin: [-1 kx, -0.5 ky]
           key:
             column_net: C3
             mirror.column_net: C8
         home:
           spread: kx
-          rotate: -15
+          rotate: -10
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C4
             mirror.column_net: C7
         far:
           spread: kx
-          rotate: -15
+          rotate: -10
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C5
