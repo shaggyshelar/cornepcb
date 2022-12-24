@@ -82,21 +82,21 @@ points:
       columns:
         near:
           spread: kx
-          rotate: -5
+          rotate: -15
           origin: [-1 kx, -0.5 ky]
           key:
             column_net: C3
             mirror.column_net: C8
         home:
           spread: kx
-          rotate: -10
+          rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C4
             mirror.column_net: C7
         far:
           spread: kx
-          rotate: -10
+          rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: C5
@@ -104,7 +104,7 @@ points:
       rows:
         thumb:
           row_net: R4
-          bind: [20,0,0,50]
+          bind: [20,0,0,55]
   # rotate: -1
   mirror:
     ref: matrix_inner_home
@@ -198,8 +198,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [1.72 kx, -4.34 ky]
-        size: [24.6, 30]
+          shift: [1.48 kx, -5.15 ky]
+        size: [33.64, 30]
         corner: px
     switches:
       main:
@@ -356,10 +356,10 @@ outlines:
       main:
         type: outline
         name: raw
-      bottom_area:
-        type: outline
-        name: bottom_area
-        operation: add
+      # bottom_area:
+      #   type: outline
+      #   name: bottom_area
+      #   operation: add
       switches:
         type: outline
         name: switches
