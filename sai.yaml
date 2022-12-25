@@ -602,7 +602,7 @@ pcbs:
         anchor:
           ref:
             - matrix_index_bottom
-          shift: [55, -18]
+          shift: [55, -28]
         params:
           text: "BRAILLE Keyboard v0.1"
           justify: left

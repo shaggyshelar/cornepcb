@@ -197,14 +197,28 @@ module.exports = {
     (pad "1" thru_hole rect (at 0 0 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "2" thru_hole oval (at 0 2.54 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "3" thru_hole oval (at 0 5.08 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "4" thru_hole oval (at 0 7.62 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "5" thru_hole oval (at 0 10.16 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "6" thru_hole oval (at 0 12.7 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "7" thru_hole oval (at 0 15.24 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "8" thru_hole oval (at 0 17.78 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
+    (pad "4" thru_hole oval (at 0 7.62 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C10.str
+    })
+    (pad "5" thru_hole oval (at 0 10.16 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+      p.net.C9.str
+    })
+    (pad "6" thru_hole oval (at 0 12.7 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+      p.net.C8.str
+    })
+    (pad "7" thru_hole oval (at 0 15.24 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+      p.net.C7.str
+    })
+    (pad "8" thru_hole oval (at 0 17.78 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+      p.net.C6.str
+    })
     (pad "9" thru_hole oval (at 0 20.32 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "10" thru_hole oval (at 0 22.86 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "11" thru_hole oval (at 0 25.4 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
+    (pad "10" thru_hole oval (at 0 22.86 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.R4.str
+    })
+    (pad "11" thru_hole oval (at 0 25.4 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.R3.str
+    })
     (pad "12" thru_hole oval (at 0 27.94 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "13" thru_hole oval (at 0 30.48 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "14" thru_hole oval (at 0 33.02 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
@@ -220,15 +234,29 @@ module.exports = {
     (pad "24" thru_hole oval (at 22.86 50.8 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "25" thru_hole oval (at 22.86 48.26 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "26" thru_hole oval (at 22.86 45.72 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "27" thru_hole oval (at 22.86 43.18 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "28" thru_hole oval (at 22.86 40.64 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "29" thru_hole oval (at 22.86 38.1 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "30" thru_hole oval (at 22.86 35.56 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "31" thru_hole oval (at 22.86 33.02 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
+    (pad "27" thru_hole oval (at 22.86 43.18 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C1.str
+    })
+    (pad "28" thru_hole oval (at 22.86 40.64 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C2.str
+    })
+    (pad "29" thru_hole oval (at 22.86 38.1 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C3.str
+    })
+    (pad "30" thru_hole oval (at 22.86 35.56 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C4.str
+    })
+    (pad "31" thru_hole oval (at 22.86 33.02 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.C5.str
+    })
     (pad "32" thru_hole oval (at 22.86 30.48 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "33" thru_hole oval (at 22.86 27.94 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "34" thru_hole oval (at 22.86 25.4 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
-    (pad "35" thru_hole oval (at 22.86 22.86 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
+    (pad "34" thru_hole oval (at 22.86 25.4 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.R1.str
+    })
+    (pad "35" thru_hole oval (at 22.86 22.86 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
+      p.net.R2.str
+    })
     (pad "36" thru_hole oval (at 22.86 20.32 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "37" thru_hole oval (at 22.86 17.78 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "38" thru_hole oval (at 22.86 15.24 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
