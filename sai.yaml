@@ -424,6 +424,12 @@ pcbs:
             - matrix_inner_top
           shift: [57, -53]
           rotate: 180
+      touchpad:
+        type: touchpad
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [45, -93]
       # bat:
       #   type: bat
       #   nets: 

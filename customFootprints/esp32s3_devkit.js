@@ -4,6 +4,7 @@ module.exports = {
     GND: "GND",
     RST: "RST",
     VCC: "VCC",
+    TOUCH1: "TOUCH1",
     R1: "R1",
     R2: "R2",
     R3: "R3",
@@ -198,21 +199,23 @@ module.exports = {
     (pad "2" thru_hole oval (at 0 2.54 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "3" thru_hole oval (at 0 5.08 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "4" thru_hole oval (at 0 7.62 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
-      p.net.C10.str
+      p.net.TOUCH1.str
     })
     (pad "5" thru_hole oval (at 0 10.16 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
-      p.net.C9.str
+      p.net.C10.str
     })
     (pad "6" thru_hole oval (at 0 12.7 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
-      p.net.C8.str
+      p.net.C9.str
     })
     (pad "7" thru_hole oval (at 0 15.24 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+      p.net.C8.str
+    })
+    (pad "8" thru_hole oval (at 0 17.78 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
       p.net.C7.str
     })
-    (pad "8" thru_hole oval (at 0 17.78 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)  ${
+    (pad "9" thru_hole oval (at 0 20.32 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
       p.net.C6.str
     })
-    (pad "9" thru_hole oval (at 0 20.32 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask))
     (pad "10" thru_hole oval (at 0 22.86 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask) ${
       p.net.R4.str
     })
