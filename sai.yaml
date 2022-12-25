@@ -448,7 +448,15 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [20, 0]
+          shift: [13, 13]
+          rotate: -90
+      i2c:
+        type: oled
+        anchor:
+          ref:
+            - mirror_matrix_inner_top
+          shift: [-13, 13]
+          rotate: -90
       # bat:
       #   type: bat
       #   nets: 
