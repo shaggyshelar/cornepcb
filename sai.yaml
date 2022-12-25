@@ -410,13 +410,20 @@ pcbs:
         outline: keycaps
         layer: Eco1.User
     footprints:
-      pi_pico:
-        type: pi_pico
+      # pi_pico:
+      #   type: pi_pico
+      #   anchor:
+      #     ref:
+      #       - matrix_inner_top
+      #     shift: [44, -17]
+      #     rotate: 0
+      esp32s3_devkit:
+        type: esp32s3_devkit
         anchor:
           ref:
             - matrix_inner_top
-          shift: [44, -17]
-          rotate: 0
+          shift: [57, -53]
+          rotate: 180
       # bat:
       #   type: bat
       #   nets: 
