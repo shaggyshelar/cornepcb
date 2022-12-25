@@ -198,8 +198,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [-5 kx, -5.15 ky]
-        size: [15 kx, 6 ky]
+          shift: [-87, -5.15 ky]
+        size: [265, 6 ky]
         corner: px
     bottom_area:
       main:
