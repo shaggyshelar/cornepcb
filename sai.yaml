@@ -443,6 +443,12 @@ pcbs:
           ref:
             - matrix_inner_top
           shift: [45, -93]
+      oled:
+        type: oled
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [20, 0]
       # bat:
       #   type: bat
       #   nets: 
