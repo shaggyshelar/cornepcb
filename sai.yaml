@@ -192,6 +192,15 @@ outlines:
           shift: [0.4 kx, -3.2 ky]
         size: [74, 71]
         corner: px
+    pcb_area:
+      main:
+        type: rectangle
+        anchor:
+          ref:
+            - matrix_inner_top
+          shift: [-5 kx, -5.15 ky]
+        size: [15 kx, 6 ky]
+        corner: px
     bottom_area:
       main:
         type: rectangle
@@ -378,6 +387,10 @@ outlines:
         # TODO use plated through hole footprints as mounting holes
         name: mounting_holes
         operation: subtract
+      pcb_area:
+        type: outline
+        name: pcb_area
+        operation: add
 pcbs:
   top_plate:
     include_keys: false
