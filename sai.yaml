@@ -457,6 +457,13 @@ pcbs:
             - mirror_matrix_inner_top
           shift: [-13, 13]
           rotate: -90
+      max98357:
+        type: max98357
+        anchor:
+          ref:
+            - mirror_matrix_pinky_top
+          shift: [8, 25]
+          rotate: -90
       # bat:
       #   type: bat
       #   nets: 
